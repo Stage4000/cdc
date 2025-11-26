@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan - Chill Dudez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a4d1a 0%, #2d5a2d 50%, #0d260d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .character-image {
+            max-width: 250px;
+            max-height: 250px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.4));
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #90EE90;
+            text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: #98FB98;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .coming-soon-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #228B22, #32CD32);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 15px 40px;
+            border-radius: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .characters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .character-circle {
+            width: 80px;
+            height: 80px;
+            border: 3px solid #32CD32;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            background: linear-gradient(145deg, #2d5a2d, #1a4d1a);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .character-circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 255, 0, 0.4);
+        }
+
+        .character-circle.active {
+            border-color: #90EE90;
+            box-shadow: 0 0 20px rgba(144, 238, 144, 0.6);
+            transform: scale(1.1);
+            pointer-events: none;
+        }
+
+        .character-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .description-text {
+            font-size: 1.1rem;
+            color: #b8e0b8;
+            max-width: 550px;
+            margin: 0 auto 40px auto;
+            line-height: 1.7;
+        }
+        
+        .footer-text {
+            color: #6b8e6b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 576px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            .coming-soon-badge {
+                font-size: 1.2rem;
+                padding: 12px 30px;
+            }
+            .character-circle {
+                width: 60px;
+                height: 60px;
+            }
+            .character-image {
+                max-width: 180px;
+                max-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Character Image -->
+        <img src="characters/juan.png" alt="Juan" class="character-image">
+        
+        <!-- Main Title -->
+        <h1 class="main-title">JUAN</h1>
+        
+        <!-- Tagline -->
+        <p class="tagline">
+            Your favorite cartoon characters, just a little more... relaxed
+        </p>
+        
+        <!-- Coming Soon Badge -->
+        <div class="coming-soon-badge">
+            🍃 COMING SOON 🍃
+        </div>
+        
+        <!-- Character Icons -->
+        <div class="characters">
+            <a href="anita.html" class="character-circle"><img src="characters/anita.png" alt="Anita"></a>
+            <a href="bud.html" class="character-circle"><img src="characters/bud.png" alt="Bud"></a>
+            <a href="ivana.html" class="character-circle"><img src="characters/ivana.png" alt="Ivana"></a>
+            <a href="juan.html" class="character-circle active"><img src="characters/juan.png" alt="Juan"></a>
+            <a href="les.html" class="character-circle"><img src="characters/les.png" alt="Les"></a>
+        </div>
+        
+        <!-- Description -->
+        <p class="description-text">
+            Get ready for the chillest cartoon crew on the internet. 
+            Our laid-back characters are about to bring some seriously good vibes to your screen. 
+            Stay tuned and stay chill, dude!
+        </p>
+        
+        <!-- Footer -->
+        <footer class="footer-text">
+            <p>© 2024 Chill Dudez | Good Vibes Only 🌿</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
